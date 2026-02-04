@@ -1,0 +1,76 @@
+// Week 5, session 1
+
+/*
+ * Task 3.2
+ * Write a C program that calculates traffic violation fines
+ * based on the type of violation and whether it is a repeat offense.
+ *
+ * Input:
+ * - violation_type: an integer representing the violation type:
+ *   1 → Speeding
+ *   2 → Signal Jumping
+ *   3 → Illegal Parking
+ * - repeat_offense: an integer representing repeat offense status:
+ *   0 → First-time offense
+ *   1 → Repeat offense
+ *
+ * Output:
+ * - Print the violation type such as "Violation: Speeding".
+ * - Calculate and display the fine amount such as "Fine amount: xxx.xx".
+ * - Apply a higher fine for repeat offenses. Repeat offenses incur a 100% fine increase (fine * 2).
+ * - Print an error message for invalid violation types such as "Invalid violation type".
+ *
+ * Notes:
+ * - Base fines:
+ *   Speeding: 100
+ *   Signal Jumping: 150
+ *   Illegal Parking: 50
+ * - The program must use a switch statement to process the violation type.
+ *   
+ * Example:
+ * Input:
+ * Enter violation type (1-Speeding, 2-Signal Jumping, 3-Illegal Parking): 1
+ * Is this a repeat offense? (0-No, 1-Yes): 1
+ *
+ * Output:
+ * Violation: Speeding
+ * Repeat offense: Yes
+ * Fine amount: 200.00
+ */
+ 
+ #include <stdio.h>
+
+int main(void) {
+    int violation_type;
+    int repeat_offense;
+    float fine = 0.0;
+
+    printf("Enter violation type (1-Speeding, 2-Signal Jumping, 3-Illegal Parking): ");
+    scanf("%d", &violationType);
+
+    printf("Is this a repeat offense? (0-No, 1-Yes): ");
+    scanf("%d", &repeatOffense);
+
+    /* subtask 1: Determine base fine using switch */
+	// Complete your code here
+    switch (violation_type) {
+        case 1:
+            break;
+
+        default:
+            printf("Invalid violation type\n");
+            return 1;
+    }
+
+    /* subtask 2: Apply repeat offense penalty */
+	// Complete your code here
+	
+	if (repeat_offense == 1) {
+		// todo
+	}
+
+    /* Output final fine */
+    printf("Fine amount: %.2f\n", fine);
+
+    return 0;
+}
