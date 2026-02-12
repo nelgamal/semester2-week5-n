@@ -51,7 +51,7 @@ int main(void) {
     scanf("%d", &choice);
 
     printf("Enter amount: ");
-    scanf("%f", &amount);
+    scanf("%lf", &amount);
 
 	// Complete your code here
     switch (choice) {

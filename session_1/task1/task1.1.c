@@ -33,10 +33,10 @@ int main(void) {
 	// Complete your code here
 	if (){  // todo
 		// todo
-		printf("Transaction Approved. Remaining balance %f", account_balance);
+		printf("Transaction Approved. Remaining balance %.2f\n", account_balance);
 	}
 	else{
-		printf("Insufficient Balance!");
+		printf("Insufficient Balance!\n");
 	}
 
 	return 0;
