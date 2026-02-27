@@ -15,6 +15,59 @@ int main(void){
  * When 1 is entered, print "You selected Coffee" and then redisplay the menu.
  * The same applies to other options except 0. When 0 is entered, the program terminates.
  */
+    
+    int choice;
+    printf("Menu Options:\n");
+    printf("1 - Coffee\n");
+    printf("2 - Tea\n");
+    printf("3 - Cold Drinks\n");
+
+    printf("Which choice do you want? Press 0 if you would rather quit. Choice:");
+    scanf("%d", &choice);
+
+    do{
+        switch(choice){
+            case 1: 
+                printf("You selected coffee!\n");
+                printf("Menu Options:\n");
+                printf("1 - Coffee\n");
+                printf("2 - Tea\n");
+                printf("3 - Cold Drinks\n");
+
+                printf("Which choice do you want? Press 0 if you would rather quit. Choice:");
+                scanf("%d", &choice);
+                break;
+            case 2: 
+                printf("You selected tea!\n");
+                printf("Menu Options:\n");
+                printf("1 - Coffee\n");
+                printf("2 - Tea\n");
+                printf("3 - Cold Drinks\n");
+
+                printf("Which choice do you want? Press 0 if you would rather quit. Choice:");
+                scanf("%d", &choice);
+                break;
+            case 3: 
+                printf("You selected cold drinks!\n");
+                printf("Menu Options:\n");
+                printf("1 - Coffee\n");
+                printf("2 - Tea\n");
+                printf("3 - Cold Drinks\n");
+
+                printf("Which choice do you want? Press 0 if you would rather quit. Choice:");
+                scanf("%d", &choice);
+                break;
+            default: 
+                printf("Invalid Option\n");
+                printf("Menu Options:\n");
+                printf("1 - Coffee\n");
+                printf("2 - Tea\n");
+                printf("3 - Cold Drinks\n");
+
+                printf("Which choice do you want? Press 0 if you would rather quit. Choice:");
+                scanf("%d", &choice);
+        }
+    } while (choice != 0);
 
     return 0;
 }
