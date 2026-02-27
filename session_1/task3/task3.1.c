@@ -59,6 +59,10 @@ int main(void) {
     if (units <= 100) {
         bill = units * 2.0;
 		// to do
+    } else if (units <= 300) {
+        bill = (100*2) + ((units - 100) * 3.5);
+    } else {
+        bill = (100*2) + (200*3.5) + ((units-300)*5);
     }
 
     /* subtask 2: apply surcharge based on customer type */
@@ -66,8 +70,16 @@ int main(void) {
     switch (customerType) {
         case 1:
             // to do
+            printf("Customer type: Domestic \n");
 			break;
-
+        case 2:
+            printf("Customer type: Commercial \n");
+            bill = bill * 1.1;
+            break;
+        case 3: 
+            printf("Customer type: Industrial \n");
+            bill = bill * 1.2;
+            break;
         default:
             printf("Invalid customer type\n");
             return 1;
