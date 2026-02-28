@@ -11,8 +11,26 @@
  #include <stdio.h>
  #include <string.h>
  
- int main(void) {
-	 
-	 
-	 return 0;
- }
+int main(void) {
+	char message[100];
+	
+	while (1){
+		printf("Enter a message: "); 
+
+		if(fgets(message, sizeof(message), stdin) == NULL) {
+			break;
+		}
+	
+		message[strcspn(message, "\n")] = 0;
+
+		if (strcmp(message, "quit") == 0) {
+			break; 
+		}
+
+		printf("You said: %s\n", message);
+	}
+
+	printf("Program terminated. \n");
+
+	return 0;
+}
